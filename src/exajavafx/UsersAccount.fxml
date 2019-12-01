@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="428.0" prefWidth="513.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="exajavafx.UsersAccountController">
+   <children>
+      <TableView fx:id="tblusers" layoutX="31.0" layoutY="112.0" onMouseClicked="#ReadFromTable" prefHeight="259.0" prefWidth="451.0">
+        <columns>
+          <TableColumn fx:id="columnUsername" prefWidth="210.33331298828125" text="User Name" />
+          <TableColumn fx:id="columnpassword" prefWidth="238.66668701171875" text="Password" />
+        </columns>
+      </TableView>
+      <TextField fx:id="textSearch" layoutX="159.0" layoutY="76.0" onKeyPressed="#SearchUser" prefHeight="25.0" prefWidth="194.0" promptText="Search User Name &gt;&gt;" />
+      <TextField fx:id="textuser" layoutX="50.0" layoutY="382.0" promptText="User Name " />
+      <TextField fx:id="textpass" layoutX="214.0" layoutY="382.0" promptText="password" />
+      <Button fx:id="btnedite" layoutX="383.0" layoutY="382.0" mnemonicParsing="false" onAction="#Edit" prefHeight="25.0" prefWidth="76.0" text="Edit" />
+   </children>
+</AnchorPane>
